@@ -32,7 +32,7 @@ header{
 .Ciclica{
     position: absolute;
     font-size:350%;
-    top:50%;
+    top:40%;
     left:50px;
 }
 .heroArt{
@@ -46,7 +46,7 @@ header{
     position: absolute;
     list-style:none;
     font-size:125%;
-    top:50%;
+    top:40%;
     left:10px;
 }
 .mainNav li{
