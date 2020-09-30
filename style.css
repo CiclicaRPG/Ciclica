@@ -19,8 +19,21 @@ html{
 
 header{
     width:100%;
-    height:1000px;
-    background-color:grey;
+    height:100vh;
+    overflow: hidden;
+    background:linear-gradient(rgba(0, 0, 0, 0.90),rgba(0, 0, 0, 0.50),rgba(0, 0, 0, 0.80),rgba(0, 0, 0, 1)),url(content/capa.jpeg);
+    background-position: center;
+    background-size:100%;
+}
+.heroTextBox{
+    color: white;
+    font-family: 'Orbitron', sans-serif;;
+}
+.Ciclica{
+    position: absolute;
+    font-size:350%;
+    bottom:0px;
+    left:50px;
 }
 .heroArt{
     float:right;
@@ -28,4 +41,32 @@ header{
 }
 .logo{
     float:left;
+}
+.mainNav{
+    position: absolute;
+    list-style:none;
+    font-size:125%;
+    top:50%;
+    left:10px;
+}
+.mainNav li{
+    display: inline-block;
+    margin-left: 40px;
+}
+.mainNav li a:link, .mainNav li a:visited{
+    color: #fff;
+    padding-bottom: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    transition: border 0.2s, color 0.2s;
+    border-bottom: 1.5px solid transparent;
+}
+.mainNav li a:hover, .mainNav li a:active{
+    color: #FFDEAD;
+    padding-bottom: 8px;
+    border-bottom: 1.5px solid #FFDEAD;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
 }
