@@ -23,7 +23,7 @@ header{
     overflow: hidden;
     background:linear-gradient(rgba(0, 0, 0, 0.90),rgba(0, 0, 0, 0.50),rgba(0, 0, 0, 0.80),rgba(0, 0, 0, 1)),url(content/capa.jpeg);
     background-position: center;
-    background-size:100%;
+    background-size:cover;
 }
 .heroTextBox{
     color: white;
@@ -32,7 +32,7 @@ header{
 .Ciclica{
     position: absolute;
     font-size:350%;
-    bottom:0px;
+    top:50%;
     left:50px;
 }
 .heroArt{
