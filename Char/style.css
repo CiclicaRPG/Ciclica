@@ -54,13 +54,12 @@ header{
     font-size: 90%;
 }
 .content{
-    margin-top:140px;
+    margin-top:100px;
 }
 .eyeCandy{
     margin:16px;
     padding:8px;
     background-color:#f1f9ed;
-    color: #26192B;
     font-family: 'Jura', sans-serif, 'Arial',sans-serif;
     color:black;
     border-style: hidden;
@@ -69,18 +68,24 @@ header{
 .eyeCandy p{
     margin-top:12px;
 }
-.eyeCandy a:link, .mainNav a:visited{
+.eyeCandy a:link, .eyeCandy a:visited{
     color: #BB3C64;
-    padding-bottom: 4px;
+    padding: 2px;
     text-decoration: none;
     font-size: 90%;
     transition: border 0.2s, color 0.2s;
-    border-bottom: 1.5px solid transparent;
+    border: 1.5px solid transparent;
+    border-radius:18px;
 }
-.eyeCandy a:hover, .mainNav a:active{
+.eyeCandy a:hover, .eyeCandy a:active{
     color: #BB3C64;
-    padding-bottom: 4px;
-    border-bottom: 1.5px solid #BB3C64;
+    padding: 2px;
+    border: 1.5px solid #BB3C64;
+    border-radius:18px;
     text-decoration: none;
     font-size: 90%;
+}
+.note{
+    font-size:70%;
+    text-align:right;
 }
