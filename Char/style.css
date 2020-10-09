@@ -14,21 +14,28 @@ html{
     font-weight: 400;
     font-size: 20px;
     text-rendering: optimizeLegibility;
-    background-color:#26192B;
+    background:linear-gradient(rgba(255,255,255, 0.08),rgba(255,255,255, 0.13),rgba(255,255,255, 0.18)),url(../content/gambino.png) ;
+    background-size:cover
 }
 header{
     position:fixed;
     top:0px;
     font-family: 'Orbitron', sans-serif, 'Arial',sans-serif;
-    background-color:#10192B;
+    background-color:rgba(0, 0, 0, 0.8);
     width:100%;
     height:100px;
 }
+h3{
+    font-size:150%;
+}
 .logo{
     position:absolute;
-    top:20px;
-    left:20px;
-    width:20%;
+    top:30px;
+    left:46px;
+    width:14%;
+}
+.links{
+    transform:translate(-25px,0px);
 }
 .mainNav li{
     float:right;
@@ -61,12 +68,14 @@ header{
 
 .eyeCandy{
     margin:4px;
-    padding:12px;
+    padding:25px;
     background-color:#f1f9ed;
     font-family: 'Jura', sans-serif, 'Arial',sans-serif;
+    font-size:90%;
     color:black;
     border-style: hidden;
     border-radius: 18px;
+    box-shadow:0 12px 12px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
 }
 .eyeCandy p{
     margin-top:12px;
