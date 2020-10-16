@@ -14,7 +14,7 @@ html{
     font-weight: 400;
     font-size: 20px;
     text-rendering: optimizeLegibility;
-    background:url(../content/gambino.png) ;
+    background:linear-gradient(rgba(255,255,255, 0.08),rgba(255,255,255, 0.13),rgba(255,255,255, 0.18)),url(../content/gambino.png) ;
     background-size:cover
 }
 header{
@@ -27,9 +27,6 @@ header{
 }
 h3{
     font-size:150%;
-}
-.name{
-    font-family: 'Orbitron', sans-serif, 'Arial',sans-serif;
 }
 .logo{
     position:absolute;
@@ -66,42 +63,24 @@ h3{
 
 /*CONTENT OF THE CHARACTER CREATION*/
 .content{
-    margin:120px 40px 20px 40px;
+    margin:100px 40px 20px 40px;
+}
+
+.eyeCandy{
+    margin:4px;
+    padding:25px;
+    background-color:#f1f9ed;
     font-family: 'Jura', sans-serif, 'Arial',sans-serif;
     font-size:90%;
     color:black;
-}
-.S1{ grid-area: Ficha;}
-.S2{ grid-area: Mundo;}
-.S3{ grid-area: Reput;}
-.S4{ grid-area: Atrib;}
-.S5{ grid-area: Espec;}
-.S6{ grid-area: Melho;}
-.S7{ grid-area: Poder;}
-.S8{ grid-area: Soque;}
-.S9{ grid-area: Compl;}
-
-.containerParent{
-    display:grid;
-    grid-template-areas:
-    'Ficha Mundo Mundo Reput'
-    'Ficha Mundo Mundo Atrib'
-    'Espec Espec Espec Melho'
-    'Poder Poder Soque Soque'
-    'Compl Compl Compl Compl';
-    grid-gap:20px;
-}
-.containerParent div{
-    background-color: rgb(255,255,255,0.8);
-    padding: 20px;
     border-style: hidden;
     border-radius: 18px;
     box-shadow:0 12px 12px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
 }
-.containerParent p{
+.eyeCandy p{
     margin-top:12px;
 }
-.containerParent a:link, .containerParent a:visited{
+.eyeCandy a:link, .eyeCandy a:visited{
     color: #BB3C64;
     padding: 2px;
     text-decoration: none;
@@ -109,7 +88,7 @@ h3{
     transition: border 0.2s, color 0.2s;
     border-bottom: 1.5px solid transparent;
 }
-.containerParent a:hover, .containerParent a:active{
+.eyeCandy a:hover, .eyeCandy a:active{
     color: #BB3C64;
     padding: 2px;
     border-bottom: 1.5px solid #BB3C64;
