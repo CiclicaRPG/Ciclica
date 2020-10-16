@@ -1,0 +1,152 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*font-family: 'Chakra Petch', sans-serif;
+font-family: 'Jura', sans-serif;
+font-family: 'Megrim', cursive;
+font-family: 'Orbitron', sans-serif;*/
+
+html{
+    color: #555;
+    font-weight: 400;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    background:url(../../content/gambino.png);
+    background-size:cover
+}
+header{
+    position:fixed;
+    top:0px;
+    font-family: 'Orbitron', sans-serif, 'Arial',sans-serif;
+    background-color:rgba(0, 0, 0, 0.8);
+    width:100%;
+    height:100px;
+}
+.name{
+    font-family: 'Orbitron', sans-serif, 'Arial',sans-serif;
+}
+.logo{
+    position:absolute;
+    top:30px;
+    left:46px;
+    width:14%;
+}
+.links{
+    transform:translate(-25px,0px);
+}
+.mainNav li{
+    float:right;
+    display:inline-block;
+    text-decoration: none;
+    margin: 40px 20px;
+}
+.mainNav li a:link, .mainNav li a:visited{
+    color: #fff;
+    padding-bottom: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    transition: border 0.2s, color 0.2s;
+    border-bottom: 1.5px solid transparent;
+}
+.mainNav li a:hover, .mainNav li a:active{
+    color: #FFDEAD;
+    padding-bottom: 8px;
+    border-bottom: 1.5px solid #FFDEAD;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+}
+
+/*CONTENT OF THE CHARACTER CREATION*/
+.content{
+    margin:120px 40px 20px 40px;
+    font-family: 'Jura', sans-serif, 'Arial',sans-serif;
+    font-size:90%;
+    color:black;
+}
+.note{
+    font-size:70%;
+    text-align:right;
+}
+.S1{ grid-area: Modi;}
+.S2{ grid-area: Prof;}
+.S3{ grid-area: Reput;}
+.S4{ grid-area: Atrib;}
+.S5{ grid-area: Espec;}
+.S6{ grid-area: Melho;}
+.S7{ grid-area: Poder;}
+.S8{ grid-area: Soque;}
+.S9{ grid-area: Compl;}
+
+.containerParent{
+    display:grid;
+    grid-template-areas:
+    'Modi Prof';
+    grid-gap:40px;
+}
+.containerParent div{
+    background-color: #f7f5df;
+    padding: 20px;
+    border-style: hidden;
+    border-radius: 18px;
+    box-shadow:0 0px 100px 50px rgba(96.1, 100, 31.4, 0.5);
+}
+.containerParent p{
+    margin-top:12px;
+}
+.containerParent a:link, .containerParent a:visited{
+    color: #BB3C64;
+    padding: 2px;
+    text-decoration: none;
+    font-size: 90%;
+    transition: border 0.2s, color 0.2s;
+    border-bottom: 1.5px solid transparent;
+}
+.containerParent a:hover, .containerParent a:active{
+    color: #BB3C64;
+    padding: 2px;
+    border-bottom: 1.5px solid #BB3C64;
+    text-decoration: none;
+    font-size: 90%;
+}
+table {
+    text-align:center;
+    margin:40px auto;
+    font-size:120%;
+    font-weight:900;
+    background-color: #f7f5df;
+    box-shadow:0 0px 100px 150px rgba(31.4, 80.1, 100.0, 0.5);
+}
+table .basic{
+    background-color:#c7b8b8;
+    padding: 12px;
+}
+table .Title{
+    background-color:#c7b8b8;
+    padding: 12px;
+    font-size: 130%;
+}
+table .bad{
+    background-color:#ff6929;
+    padding: 12px;
+}
+table .vGood{
+    background-color:#1dc423;
+    padding: 12px;
+}
+table .Good{
+    background-color:#25ccab;
+    padding: 12px;
+}
+table .medium{
+    background-color:#4d88ef;
+    padding: 12px;
+}
+table .slow{
+    background-color:#bc21f7;
+    padding: 12px;
+}
