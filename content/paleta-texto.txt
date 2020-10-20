@@ -1,0 +1,4 @@
+#0f0f0f0 - cinza gostosinho
+#0a9cf5 - azul neon
+#b00295 - roxo destaque
+#05d9e8 - azul frio 

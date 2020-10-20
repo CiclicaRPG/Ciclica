@@ -10,12 +10,13 @@ font-family: 'Megrim', cursive;
 font-family: 'Orbitron', sans-serif;*/
 
 html{
-    color: #555;
     font-weight: 400;
     font-size: 20px;
     text-rendering: optimizeLegibility;
-    background:url(../content/gambino.png) ;
-    background-size:cover
+    background: linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.0)), url(../content/corridor.jpg) ;
+/*    background: url(../content/corridor.jpg) ; */
+    background-size:cover;
+    background-position:center;
 }
 header{
     position:fixed;
@@ -69,7 +70,7 @@ h3{
     margin:120px 40px 20px 40px;
     font-family: 'Jura', sans-serif, 'Arial',sans-serif;
     font-size:90%;
-    color:black;
+    color:#0f0f0f;
 }
 .S1{ grid-area: Ficha;}
 .S2{ grid-area: Mundo;}
@@ -89,30 +90,28 @@ h3{
     'Espec Espec Espec Melho'
     'Poder Poder Soque Soque'
     'Compl Compl Compl Compl';
-    grid-gap:20px;
+    grid-gap:30px;
 }
 .containerParent div{
-    background-color: rgb(255,255,255,0.8);
+    background-color: #f0f0f0;
     padding: 20px;
     border-style: hidden;
     border-radius: 18px;
-    box-shadow:0 12px 12px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+    box-shadow:0 0px 10px 6px rgba(10, 156, 245, 0.5);
 }
 .containerParent p{
     margin-top:12px;
 }
 .containerParent a:link, .containerParent a:visited{
-    color: #BB3C64;
+    color: #b00295;
     padding: 2px;
     text-decoration: none;
     font-size: 90%;
-    transition: border 0.2s, color 0.2s;
-    border-bottom: 1.5px solid transparent;
+    transition: color 0.2s;
 }
 .containerParent a:hover, .containerParent a:active{
-    color: #BB3C64;
+    color: #05d9e8;
     padding: 2px;
-    border-bottom: 1.5px solid #BB3C64;
     text-decoration: none;
     font-size: 90%;
 }
@@ -122,7 +121,7 @@ h3{
 }
 .dropdown{
     padding:12px;
-    color: #BB3C64;
+    color: #b00295;
 }
 .dropdown:hover .dropdownContent {
   display: block;
