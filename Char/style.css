@@ -72,10 +72,10 @@ h3{
     font-size:90%;
     color:#0f0f0f;
 }
-.S1{ grid-area: Ficha;}
-.S2{ grid-area: Mundo;}
-.S3{ grid-area: Reput;}
-.S4{ grid-area: Atrib;}
+.S2{ grid-area: Ficha;}
+.S1{ grid-area: Mundo;}
+.S4{ grid-area: Reput;}
+.S3{ grid-area: Atrib;}
 .S5{ grid-area: Espec;}
 .S6{ grid-area: Melho;}
 .S7{ grid-area: Poder;}
@@ -85,10 +85,10 @@ h3{
 .containerParent{
     display:grid;
     grid-template-areas:
-    'Ficha Mundo Mundo Reput'
-    'Ficha Mundo Mundo Atrib'
+    'Mundo Mundo Mundo Mundo'
+    'Ficha Ficha Atrib Reput'
     'Espec Espec Espec Melho'
-    'Poder Poder Soque Soque'
+    'Poder Poder Poder Soque'
     'Compl Compl Compl Compl';
     grid-gap:30px;
 }
