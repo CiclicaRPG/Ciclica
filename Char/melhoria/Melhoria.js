@@ -2,6 +2,7 @@ var openWindows   = 0;
 var aTrigger  = 0;
 var bTrigger  = 0;
 var cTrigger  = 0;
+var dTrigger  = 0;
 
 function moveUp(){
 //    alert('moveUp');
@@ -84,6 +85,26 @@ window.onload = function(){
         cContent.style.display="none";
         openWindows--;
         cTrigger = 0;
+        moveUp();
+    }
+    
+    var d         = document.getElementById("d");
+    var dContent  = document.getElementById("dContent");
+    var dClose    = document.getElementById("dClose");
+    
+    d.onclick = function(){
+        if(dTrigger==0 && openWindows<2){
+            dContent.style.display="block";
+            dContent.style.top = String(110+425*openWindows)+"px";
+            dClose.style.top = String(140+425*openWindows)+"px";
+            openWindows++;
+            dTrigger = 1;
+        }
+    }
+    dClose.onclick = function(){
+        dContent.style.display="none";
+        openWindows--;
+        dTrigger = 0;
         moveUp();
     }
     return false;
