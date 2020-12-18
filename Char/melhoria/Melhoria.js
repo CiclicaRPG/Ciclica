@@ -1,43 +1,90 @@
-window.onload = function(){
-    var openWindows   = 0;
-    var aaaaa         = document.getElementById("aaaaa");
-    var aaaaaContent  = document.getElementById("aaaaaContent");
-    var aaaaaClose    = document.getElementById("aaaaaClose");
-    var aaaaaTrigger  = 0;
+var openWindows   = 0;
+var aTrigger  = 0;
+var bTrigger  = 0;
+var cTrigger  = 0;
 
-    aaaaa.onclick = function(){
-        if(aaaaaTrigger==0){
-            aaaaaContent.style.display="block";
-            aaaaaContent.style.top = String(100+410*openWindows)+"px";
-            aaaaaClose.style.top = String(120+410*openWindows)+"px";
-            openWindows++;
-            aaaaaTrigger = 1;
+function moveUp(){
+//    alert('moveUp');
+    if(openWindows==1){
+//        alert('detected 1 remaining open window');
+        if(aTrigger==1){
+//            alert('detected a opened')
+            aContent.style.top = String(110)+"px";
+            aClose.style.top = String(140)+"px";
+        }
+        if(bTrigger==1){
+//            alert('detected b opened')
+            bContent.style.top = String(110)+"px";
+            bClose.style.top = String(140)+"px";
+        }
+        if(cTrigger==1){
+//            alert('detected c opened')
+            cContent.style.top = String(110)+"px";
+            cClose.style.top = String(140)+"px";
         }
     }
-    aaaaaClose.onclick = function(){
-        aaaaaContent.style.display="none";
-        openWindows--;
-        aaaaaTrigger = 0;
-    }
-    
-    var aaaab         = document.getElementById("aaaab");
-    var aaaabContent  = document.getElementById("aaaabContent");
-    var aaaabClose    = document.getElementById("aaaabClose");
-    var aaaabTrigger  = 0;
-    
-    aaaab.onclick = function(){
-        if(aaaabTrigger==0){
-            aaaabContent.style.display="block";
-            aaaabContent.style.top = String(100+410*openWindows)+"px";
-            aaaabClose.style.top = String(120+410*openWindows)+"px"
+    return false
+}
+
+window.onload = function(){
+    var a         = document.getElementById("a");
+    var aContent  = document.getElementById("aContent");
+    var aClose    = document.getElementById("aClose");
+
+    a.onclick = function(){
+        if(aTrigger==0 && openWindows<2){
+            aContent.style.display="block";
+            aContent.style.top = String(110+425*openWindows)+"px";
+            aClose.style.top = String(140+425*openWindows)+"px";
             openWindows++;
-            aaaabTrigger = 1;
+            aTrigger = 1;
         }
     }
-    aaaabClose.onclick = function(){
-        aaaabContent.style.display="none";
+    aClose.onclick = function(){
+        aContent.style.display="none";
         openWindows--;
-        aaaabTrigger = 0;
+        aTrigger = 0;
+        moveUp();
+    }
+    
+    var b         = document.getElementById("b");
+    var bContent  = document.getElementById("bContent");
+    var bClose    = document.getElementById("bClose");
+    
+    b.onclick = function(){
+        if(bTrigger==0 && openWindows<2){
+            bContent.style.display="block";
+            bContent.style.top = String(110+425*openWindows)+"px";
+            bClose.style.top = String(140+425*openWindows)+"px";
+            openWindows++;
+            bTrigger = 1;
+        }
+    }
+    bClose.onclick = function(){
+        bContent.style.display="none";
+        openWindows--;
+        bTrigger = 0;
+        moveUp();
+    }
+    
+    var c         = document.getElementById("c");
+    var cContent  = document.getElementById("cContent");
+    var cClose    = document.getElementById("cClose");
+    
+    c.onclick = function(){
+        if(cTrigger==0 && openWindows<2){
+            cContent.style.display="block";
+            cContent.style.top = String(110+425*openWindows)+"px";
+            cClose.style.top = String(140+425*openWindows)+"px";
+            openWindows++;
+            cTrigger = 1;
+        }
+    }
+    cClose.onclick = function(){
+        cContent.style.display="none";
+        openWindows--;
+        cTrigger = 0;
+        moveUp();
     }
     return false;
 }

@@ -14,7 +14,9 @@ html{
     font-weight: 400;
     font-size: 20px;
     text-rendering: optimizeLegibility;
-    background-color:#f9f9f9;
+    background: linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.0)), url(../../content/corridor.jpg) ;
+    background-size:100% 1800px;
+    background-position:center;
 }
 header{
     position:fixed;
@@ -63,6 +65,15 @@ header{
     margin:120px 40px 20px 40px;
     font-family: 'Chakra Petch', sans-serif;
 }
+
+.name {
+    width: 25%;
+    background-color: #f0f0f0;
+    box-shadow:0 0px 10px 6px rgba(10, 156, 245, 0.5);
+    border-style: hidden;
+    border-radius: 18px;
+    padding: 20px;
+}
 .name p{
   font-size: 50%;
 }
@@ -81,13 +92,15 @@ header{
 .dropdownContent{
     display: none;
     position: absolute;
-    width:60%;
-    height:410px;
-    left: 40%;
-    top:100px;
-    background-color: #f7f5df;
-    padding: 20px 50px;
+    width:65%;
+    height:400px;
+    left: 30%;
     z-index: 1;
+    background-color: #f0f0f0;
+    box-shadow:0 0px 10px 6px rgba(10, 156, 245, 0.5);
+    border-style: hidden;
+    border-radius: 18px;
+    padding: 0px 30px;
 }
 .dropdownContent ul{
     font-size: 80%;
@@ -106,5 +119,5 @@ header{
 .closeBtn{
     position:fixed;
     font-size:60%;
-    right: 30px;
+    right: 80px;
 }

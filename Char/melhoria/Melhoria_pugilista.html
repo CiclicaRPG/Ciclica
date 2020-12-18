@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Mundo</title>
+        <title>Pugilista</title>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="../external/css/2015-03-25_13-52-05__grid.css">
         <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,500;0,600;0,700;1,300&family=Jura:wght@400;500;600;700&family=Megrim&family=Orbitron:wght@400;500;600;800&display=swap" rel="stylesheet">
@@ -27,14 +27,16 @@
         </header> 
         
         <section class="content">
-            <div class="name">
-                <a id="aaaaa" >Investida</a>
-                <p>Requer um mínimo de 1 ponto em pugilismo</p>
-            </div>
+            <a id="a" >
+                <div class="name">
+                    Investida
+                    <p>Requer um mínimo de 1 ponto em pugilismo</p>
+                </div>
+            </a>
             <div class="dropdown">
-                <div id="aaaaaContent" class="dropdownContent">
-                    <h1 style="margin-bottom:4px;">Investida</h1>
-                    <a id="aaaaaClose" class="closeBtn" href="#">[Fechar]</a>
+                <div id="aContent" class="dropdownContent">
+                    <h1>Investida</h1>
+                    <a id="aClose" class="closeBtn" href="#">[Fechar]</a>
                     <h5>O combatente é capaz de se lançar contra o oponente antes de seu próximo golpe, recebendo:</h5>
                     <ul>
                         <li>
@@ -48,7 +50,7 @@
                             <p>Mérito em Acerto: <em>3</em></p>
                         </li>
                         <li>
-                            <p>Requerimento: <em>poder 3 e Pugilismo 5</em></p>
+                            <p>Requerimento: <em>poder 2 e Pugilismo 5</em></p>
                             <p>Mérito em Velocidade: <em>2 + Pugilista</em> </p>
                             <p>Mérito em Acerto: <em>5</em></p>
                         </li>
@@ -56,14 +58,42 @@
                 </div>
             </div>
             
-            <div class="name">
-                <a id="aaaab" >Coragem</a>
-                <p>Requer um mínimo de 3 ponto em pugilismo</p>
-            </div>
+            <a id="c" >
+                <div class="name">
+                    Aleijar
+                    <p>Requer um mínimo de 2 pontos em pugilismo</p>
+                </div>
+            </a>
             <div class="dropdown">
-                <div id="aaaabContent" class="dropdownContent">
-                    <h1 style="margin-bottom:4px;">Coragem</h1>
-                    <a id="aaaabClose" class="closeBtn" href="#">[Fechar]</a>
+                <div id="cContent" class="dropdownContent">
+                    <h1>Aleijar</h1>
+                    <a id="cClose" class="closeBtn" href="#">[Fechar]</a>
+                    <h5>O combatente executa um golpe preciso para debilitar o oponente</h5>
+                    <ul>
+                        <li>
+                            <p>Requerimento: <em>poder 1 e Pugilismo 2</em></p>
+                            <p>Demérito em Velocidade: -4 </p>
+                            <p>Efeito: <em>O próximo golpe causará Fraqueza = 0.5*(Pugilista)</em></p>
+                        </li>
+                        <li>
+                            <p>Requerimento: <em>poder 1 e Pugilismo 4</em></p>
+                            <p>Demérito em Velocidade: -6 </p>
+                            <p>Efeito: <em>O próximo golpe causará Fraqueza = (Pugilista)</em></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <a id="b" >
+                <div class="name">
+                    Coragem
+                    <p>Requer um mínimo de 3 ponto em pugilismo</p>
+                </div>
+            </a>
+            <div class="dropdown">
+                <div id="bContent" class="dropdownContent">
+                    <h1>Coragem</h1>
+                    <a id="bClose" class="closeBtn" href="#">[Fechar]</a>
                     <h5>Após anos de experiência em combate, só os maiores perigos aquecem o sangue da personagem.  </h5>
                     <ul>
                         <li>
@@ -72,11 +102,12 @@
                         </li>
                         <li>
                             <p>Requerimento: <em>poder 2 e Pugilismo 3</em></p>
-                            <p>Efeito: <em>A personagem vence qualquer teste de ousadia para colocar sua própria vida em risco./em></p>
+                            <p>Efeito: <em>A personagem vence qualquer teste de ousadia para colocar sua própria vida em risco.</em></p>
                         </li>
                     </ul>
                 </div>
             </div>
+                        
         </section>
     </body>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
