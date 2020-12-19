@@ -15,7 +15,7 @@ html{
     font-size: 20px;
     text-rendering: optimizeLegibility;
     background: linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.0)), url(../../content/corridor.jpg) ;
-    background-size:100% 1800px;
+    background-size:100% 2500px;
     background-position:center;
 }
 header{
@@ -93,14 +93,14 @@ header{
     display: none;
     position: absolute;
     width:65%;
-    height:400px;
+    min-height:425px;
     left: 30%;
     z-index: 1;
     background-color: #f0f0f0;
     box-shadow:0 0px 10px 6px rgba(10, 156, 245, 0.5);
     border-style: hidden;
     border-radius: 18px;
-    padding: 0px 30px;
+    padding: 0px 30px 30px 30px;
 }
 .dropdownContent ul{
     font-size: 80%;

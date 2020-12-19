@@ -23,8 +23,46 @@ function moveUp(){
             cContent.style.top = String(110)+"px";
             cClose.style.top = String(140)+"px";
         }
+        if(dTrigger==1){
+//            alert('detected c opened')
+            dContent.style.top = String(110)+"px";
+            dClose.style.top = String(140)+"px";
+        }
     }
     return false
+}
+
+function openWindow(){
+    var styleA = window.getComputedStyle(aContent);
+    var styleB = window.getComputedStyle(bContent);
+    var styleC = window.getComputedStyle(cContent);
+    var styleD = window.getComputedStyle(dContent);
+    var step = 0;
+    if(openWindows==1){
+ //       alert('detected an window opened')
+        if(aTrigger==1){
+  //        alert('detected a opened');
+          step  = parseFloat(styleA.getPropertyValue('height'));
+  //        alert(String(step));
+        }
+        if(bTrigger==1){
+  //        alert('detected b opened');
+          step  = parseFloat(styleB.getPropertyValue('height'));
+  //        alert(String(step));
+        }
+        if(cTrigger==1){
+  //        alert('detected c opened');
+          step  = parseFloat(styleC.getPropertyValue('height'));
+  //        alert(String(step));
+        }
+        if(dTrigger==1){
+  //        alert('detected d opened');
+          step  = parseFloat(styleD.getPropertyValue('height'));
+ //         alert(String(step));
+        }
+    }
+ //   alert(step);
+    return step;
 }
 
 window.onload = function(){
@@ -34,9 +72,10 @@ window.onload = function(){
 
     a.onclick = function(){
         if(aTrigger==0 && openWindows<2){
+            step = openWindow();
             aContent.style.display="block";
-            aContent.style.top = String(110+425*openWindows)+"px";
-            aClose.style.top = String(140+425*openWindows)+"px";
+            aContent.style.top = String(110+(step+20)*openWindows)+"px";
+            aClose.style.top = String(140+(step+20)*openWindows)+"px";
             openWindows++;
             aTrigger = 1;
         }
@@ -54,9 +93,10 @@ window.onload = function(){
     
     b.onclick = function(){
         if(bTrigger==0 && openWindows<2){
+            step = openWindow();
             bContent.style.display="block";
-            bContent.style.top = String(110+425*openWindows)+"px";
-            bClose.style.top = String(140+425*openWindows)+"px";
+            bContent.style.top = String(110+(step+20)*openWindows)+"px";
+            bClose.style.top = String(140+(step+20)*openWindows)+"px";
             openWindows++;
             bTrigger = 1;
         }
@@ -74,9 +114,10 @@ window.onload = function(){
     
     c.onclick = function(){
         if(cTrigger==0 && openWindows<2){
+            step = openWindow();
             cContent.style.display="block";
-            cContent.style.top = String(110+425*openWindows)+"px";
-            cClose.style.top = String(140+425*openWindows)+"px";
+            cContent.style.top = String(110+(step+20)*openWindows)+"px";
+            cClose.style.top = String(140+(step+20)*openWindows)+"px";
             openWindows++;
             cTrigger = 1;
         }
@@ -94,9 +135,10 @@ window.onload = function(){
     
     d.onclick = function(){
         if(dTrigger==0 && openWindows<2){
+            step = openWindow();
             dContent.style.display="block";
-            dContent.style.top = String(110+425*openWindows)+"px";
-            dClose.style.top = String(140+425*openWindows)+"px";
+            dContent.style.top = String(110+(step+20)*openWindows)+"px";
+            dClose.style.top = String(140+(step+20)*openWindows)+"px";
             openWindows++;
             dTrigger = 1;
         }
