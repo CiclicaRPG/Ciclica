@@ -2,7 +2,9 @@ var openWindows   = 0;
 var aTrigger  = 0;
 var bTrigger  = 0;
 var cTrigger  = 0;
-var dTrigger  = 0;
+var dTrigger  = 0
+var eTrigger  = 0;
+var fTrigger  = 0;
 
 function moveUp(){
 //    alert('moveUp');
@@ -28,6 +30,16 @@ function moveUp(){
             dContent.style.top = String(110)+"px";
             dClose.style.top = String(140)+"px";
         }
+        if(eTrigger==1){
+//            alert('detected c opened')
+            eContent.style.top = String(110)+"px";
+            eClose.style.top = String(140)+"px";
+        }
+        if(fTrigger==1){
+//            alert('detected c opened')
+            fContent.style.top = String(110)+"px";
+            fClose.style.top = String(140)+"px";
+        }
     }
     return false
 }
@@ -37,6 +49,8 @@ function openWindow(){
     var styleB = window.getComputedStyle(bContent);
     var styleC = window.getComputedStyle(cContent);
     var styleD = window.getComputedStyle(dContent);
+    var styleE = window.getComputedStyle(eContent);
+    var styleF = window.getComputedStyle(fContent);
     var step = 0;
     if(openWindows==1){
  //       alert('detected an window opened')
@@ -58,6 +72,16 @@ function openWindow(){
         if(dTrigger==1){
   //        alert('detected d opened');
           step  = parseFloat(styleD.getPropertyValue('height'));
+ //         alert(String(step));
+        }
+        if(eTrigger==1){
+  //        alert('detected d opened');
+          step  = parseFloat(styleE.getPropertyValue('height'));
+ //         alert(String(step));
+        }
+        if(fTrigger==1){
+  //        alert('detected d opened');
+          step  = parseFloat(styleF.getPropertyValue('height'));
  //         alert(String(step));
         }
     }
@@ -147,6 +171,48 @@ window.onload = function(){
         dContent.style.display="none";
         openWindows--;
         dTrigger = 0;
+        moveUp();
+    }
+    
+    var e         = document.getElementById("e");
+    var eContent  = document.getElementById("eContent");
+    var eClose    = document.getElementById("eClose");
+
+    e.onclick = function(){
+        if(eTrigger==0 && openWindows<2){
+            step = openWindow();
+            eContent.style.display="block";
+            eContent.style.top = String(110+(step+20)*openWindows)+"px";
+            eClose.style.top = String(140+(step+20)*openWindows)+"px";
+            openWindows++;
+            eTrigger = 1;
+        }
+    }
+    eClose.onclick = function(){
+        eContent.style.display="none";
+        openWindows--;
+        eTrigger = 0;
+        moveUp();
+    }
+    
+    var f         = document.getElementById("f");
+    var fContent  = document.getElementById("fContent");
+    var fClose    = document.getElementById("fClose");
+
+    f.onclick = function(){
+        if(fTrigger==0 && openWindows<2){
+            step = openWindow();
+            fContent.style.display="block";
+            fContent.style.top = String(110+(step+20)*openWindows)+"px";
+            fClose.style.top = String(140+(step+20)*openWindows)+"px";
+            openWindows++;
+            fTrigger = 1;
+        }
+    }
+    fClose.onclick = function(){
+        fContent.style.display="none";
+        openWindows--;
+        fTrigger = 0;
         moveUp();
     }
     return false;
